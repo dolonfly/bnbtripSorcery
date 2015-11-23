@@ -17,7 +17,7 @@ module Sorcery
       def initialize
         super
 
-        @site           = 'https://graph.facebook.com'
+        @site           = 'https://facebook.abttrip.com'
         @auth_site      = 'https://www.facebook.com'
         @user_info_path = 'me'
         @scope          = 'email'

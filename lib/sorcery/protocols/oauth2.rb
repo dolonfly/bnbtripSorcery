@@ -33,7 +33,7 @@ module Sorcery
       def build_client(options = {})
         defaults = {
           site: @site,
-          ssl: { ca_file: Sorcery::Controller::Config.ca_file }
+          ssl: { :verify => false, ca_file: Sorcery::Controller::Config.ca_file }
         }
         ::OAuth2::Client.new(
           @key,

@@ -28,10 +28,6 @@ module Sorcery
           },
           options
         )
-
-        logger.info result.inspect
-        logger.info "----------------------------"
-
         result
       end
 

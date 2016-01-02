@@ -20,7 +20,7 @@ module Sorcery
 
       def get_access_token(args, options = {})
         client = build_client(options)
-        client.auth_code.get_token(
+        result = client.auth_code.get_token(
           args[:code],
           {
             redirect_uri: @callback_url,
@@ -28,6 +28,11 @@ module Sorcery
           },
           options
         )
+
+        logger.info result.inspect
+        logger.info "----------------------------"
+
+        result
       end
 
       def build_client(options = {})

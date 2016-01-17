@@ -19,7 +19,7 @@ module Sorcery
 
         @site           = 'https://api.weibo.com'
         @auth_site      = 'https://api.weibo.com'
-        @user_info_path = 'https://api.weibo.com2/users/show.json'
+        @user_info_path = 'https://api.weibo.com/2/users/show.json'
         @scope          = ''
         @display        = 'page'
         @token_url      = 'oauth2/access_token'

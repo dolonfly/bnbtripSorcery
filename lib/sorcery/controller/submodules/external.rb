@@ -20,6 +20,7 @@ module Sorcery
           require 'sorcery/providers/jira'
           require 'sorcery/providers/salesforce'
           require 'sorcery/providers/weibo'
+          require 'sorcery/providers/wechat'
 
           Config.module_eval do
             class << self

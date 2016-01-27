@@ -6,7 +6,7 @@ module Sorcery
     #   config.wechat.secret = <secret>
     #   ...
     #
-    class WeChat < Base
+    class Wechat < Base
 
       include Protocols::Oauth2
 
